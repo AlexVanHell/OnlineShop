@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Index</title>
+      <meta charset='utf-8'>
+      <meta name='viewport' maximum-scale='1.0' user-scalable='no'>
+      <link rel='stylesheet' type="text/css" href='css/estilo.css'>
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/design_control.js"></script>
+  </head>
+  <body>
+    <div class="app_bar shadow">
+      <div class="app_title">
+        <div class="inner">
+          Carrito de Compras
+        </div>
+      </div>
+      <a href="cart.html">
+        <div class="carrito">
+          <div class="inner">
+            <div class="img_container">
+              <img src="images/cart.png">
+            </div><div class="data" id="totalItems">
+              0
+            </div><div class="data">
+              $ <span total>0</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <div class="menu_selector">
+        <div class="inner" id="toggle_menu">
+          <div class="img_container">
+            <img src="images/profile_img.png">
+          </div><div class="data">
+            <div class="name">Vato vato</div>
+            <div class="email">vato@vato.com</div>
+          </div>
+        </div>
+        <div class="hidden_menu" id="menu_hidden">
+          <div class="menu_options">
+            <a href="profile.html">
+              <nav class="item hover_item">Perfil</nav>
+            </a>
+            <a href="history.html">
+              <nav class="item hover_item">Historial de Compras</nav>
+            </a>
+            <div style="height: 10px;"></div>
+            <div class="line_separator"></div>
+            <nav class="item hover_item_red">Cerrar Sesión</nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space"></div>
+    <div class="app_container">
+      <div class="main_img">
+        <img src="http://eskipaper.com/images/shopping-wallpaper-hd-1.jpg">
+        <div class="transparent_bg"></div>
+      </div>
+      <div class="blank_space"></div>
+      <div class="main_container">
+        <div class="title font_color_white">
+          Productos
+        </div>
+        <div class="txt_center">
+          <!-- Este de aqui abajo se va a repetir -->
+          <div class="col-md2">
+            <div class="card shadow">
+              <div class="img_container">
+                <img src="https://img.difoosion.com/wp-content/blogs.dir/28/files/2016/10/PIXEL-BLANCO-700x500.jpg">
+              </div><div class="info_container">
+                <div class="pd_16">
+                  <div class="name">Producto 1</div>
+                  <div class="description">Celular de gama alta</div>
+                  <div class="price">$ <span>19540.00</span></div>
+                </div>
+                <div class="cart_add">
+                  <div class="quantity">
+                    <button class="hover_item">-</button>
+                    <div class="number">0</div>
+                    <button class="hover_item">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- 
+           --><div class="col-md2">
+            <div class="card shadow">
+              <div class="img_container">
+                <img src="https://www.mascaradelatex.com/products/art/l/11662.png">
+              </div><div class="info_container">
+                <div class="pd_16">
+                  <div class="name">Producto 2</div>
+                  <div class="description">Playera para caballero</div>
+                  <div class="price">$ <span>229.49</span></div>
+                </div>
+                <div class="cart_add">
+                  <div class="quantity">
+                    <button class="hover_item">-</button>
+                    <div class="number">0</div>
+                    <button class="hover_item">+</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
