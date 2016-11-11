@@ -38,14 +38,18 @@ jQuery(document).ready(function(){
 		checkTotal();
 	});
 
+	// Este es el que hace que se abra el popup
 	jQuery('.card .img_container').click(function(){
 		jQuery('#pop_up .container').removeClass('pop_up_center');
 		jQuery('#pop_up').fadeIn();
+		// Si la ventana tiene mayor altura que el cuadro de la info
+		// se centrara horizontalmente
 		if (jQuery(window).height() > jQuery('#pop_up .container').height()) {
 			jQuery('#pop_up .container').addClass('pop_up_center');
 		}
 	});
 
+	//	Cerrar el pop_up
 	jQuery('#pop_up .back').click(function(){
 		jQuery('#pop_up').fadeOut();
 	});
