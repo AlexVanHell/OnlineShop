@@ -47,12 +47,83 @@ body{
 	font-size: 22px;
 	color: #fff;
 	cursor: pointer;
+	vertical-align: top;
 }
 
 .app_bar .app_title .inner{
 	height: 100%;
 	line-height: 56px;
 	padding-left: 16px;
+}
+
+.app_bar .search_bar_container{
+	width: 500px;
+	height: 48px;
+	vertical-align: top;
+	display: inline-block;
+	margin-left: 32px;
+	border-radius: 2px;
+	overflow: hidden;
+	margin-top: 4px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.app_bar .search_bar_container .search_bar{
+	width: calc(100% - 72px);
+	padding: 0 12px 0 12px;
+	height: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.app_bar .search_bar_container .search_bar input{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	background: transparent;
+	border: none;
+	color: #fff;
+	outline: none;
+	font-size: 17px; 
+}
+
+.search_bar input::-webkit-input-placeholder {
+   color: rgba(255, 255, 255, 0.5);
+}
+
+.search_bar input:-moz-placeholder { /* Firefox 18- */
+   color: rgba(255, 255, 255, 0.5);  
+}
+
+.search_bar input::-moz-placeholder {  /* Firefox 19+ */
+   color: rgba(255, 255, 255, 0.5);  
+}
+
+.search_bar input:-ms-input-placeholder {  
+   color: rgba(255, 255, 255, 0.5);  
+}
+
+.app_bar .search_bar_container button{
+	display: inline-block;
+	width: 48px;
+	height: 48px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	background: transparent;
+	vertical-align: top;
+	cursor: pointer;
+}
+
+.app_bar .search_bar_container button:hover{
+	background-color: #424242;
+}
+
+.app_bar .search_bar_container button img{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	padding: 12px;
 }
 
 .menu_selector{
@@ -389,6 +460,7 @@ body{
 	position: relative;
 	overflow: hidden;
 	vertical-align: bottom;
+	cursor: pointer;
 }
 
 .card .img_container img{
@@ -500,4 +572,42 @@ body{
 	border-radius: 2px;
 	font-size: 16px;
 	cursor: pointer;
+}
+
+.pop_up{
+	position: fixed;
+	width: 100%;
+	z-index: 299;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(255, 255, 255, 0.7);
+	display: none;
+	top: 0;
+	left: 0;
+}
+
+.pop_up .back{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.pop_up .container{
+	background-color: #fff;
+	border-radius: 2px;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 24px;
+	width: calc(100% - 32px);
+	top: 32px;
+	margin-bottom: 32px;
+	max-width: 500px;
+	position: relative;
+	z-index: 2;
+}
+
+
+.pop_up_center{
+	top: 50% !important;
+	transform: translateY(-50%);
 }

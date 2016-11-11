@@ -38,6 +38,14 @@ jQuery(document).ready(function(){
 		checkTotal();
 	});
 
+	jQuery('.card .img_container').click(function(){
+		jQuery('#pop_up .container').removeClass('pop_up_center');
+		jQuery('#pop_up').fadeIn();
+		if (jQuery(window).height() > jQuery('#pop_up .container').height()) {
+			jQuery('#pop_up .container').addClass('pop_up_center');
+		}
+	});
+
 });
 
 function checkTotal(){
