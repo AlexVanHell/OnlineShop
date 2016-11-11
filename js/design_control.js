@@ -46,6 +46,10 @@ jQuery(document).ready(function(){
 		}
 	});
 
+	jQuery('#pop_up .back').click(function(){
+		jQuery('#pop_up').fadeOut();
+	});
+
 });
 
 function checkTotal(){
